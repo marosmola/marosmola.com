@@ -5,6 +5,14 @@ import { createResolver } from '@nuxt/kit'
 const { resolve } = createResolver(import.meta.url)
 
 export default defineNuxtConfig({
+  ssr: false,
+  content: {
+    experimental: {
+      clientDB: true,
+      stripQueryParameters: false,
+      advanceQuery: false
+    }
+  },
   app: {
     head: {
       htmlAttrs: {
