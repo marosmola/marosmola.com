@@ -1,6 +1,6 @@
 
-name: studio-nuxt-build
-run-name: studio nuxt build
+name: content-nuxt-build
+run-name: content nuxt build
 
 on:
   # Runs on pushes targeting the default branch
